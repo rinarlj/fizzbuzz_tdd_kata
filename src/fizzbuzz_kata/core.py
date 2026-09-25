@@ -9,6 +9,7 @@ def fizzbuzz(n: int) -> str:
 
     Raises ValueError if n is not a strictly positive integer.
     """
+    
     if not isinstance(n, int) or n <= 0:
         raise ValueError("fizzbuzz expects a strictly positive integer")
 
@@ -17,5 +18,5 @@ def fizzbuzz(n: int) -> str:
         result += "Fizz"
     if n % 5 == 0:
         result += "Buzz"
-        
+
     return result or str(n)
