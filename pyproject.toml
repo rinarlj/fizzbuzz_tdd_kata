@@ -1,6 +1,6 @@
 [project]
-name = "fizzbuzz-tdd-kata"
-version = "0.1.1"
+name = "fizzbuzz-kata"
+version = "0.1.2"
 description = "A TDD kata: FizzBuzz, from notebook exploration to a tested, published package"
 readme = "README.md"
 requires-python = ">=3.11"
