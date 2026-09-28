@@ -2,4 +2,3 @@
 
 all = ["fizzbuzz"]
 version = "0.1.0"
-

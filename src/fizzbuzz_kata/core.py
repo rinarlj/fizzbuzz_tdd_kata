@@ -14,7 +14,7 @@ def fizzbuzz(n: int) -> str:
         raise ValueError("fizzbuzz expects a strictly positive integer")
 
     result = ""
-    
+
     if n % 3 == 0:
         result += "Fizz"
     if n % 5 == 0:
