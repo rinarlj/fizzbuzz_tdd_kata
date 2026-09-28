@@ -1,5 +1,6 @@
 from fizzbuzz_kata.cli import build_parser
 
+
 def test_parser_accepts_single_number():
     args = build_parser().parse_args(["15"])
     assert args.n == 15

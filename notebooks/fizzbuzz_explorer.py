@@ -4,9 +4,10 @@ __generated_with = "0.24.2"
 app = marimo.App(width="medium")
 
 with app.setup:
+    from collections import Counter
+
     import marimo as mo
     import matplotlib.pyplot as plt
-    from collections import Counter
 
     from fizzbuzz_kata import fizzbuzz
 
@@ -21,7 +22,7 @@ def _():
     outputs. This notebook consumes the published fizzbuzz_kata
     package — it does not reimplement the function.
     """)
-    return
+    #return
 
 
 @app.cell
@@ -36,8 +37,8 @@ def _():
 def _(end, start):
     lo, hi = sorted((start.value, end.value))
     results = [fizzbuzz(n) for n in range(lo, hi + 1)]
-    results
-    return (results,)
+    
+    return results
 
 
 @app.cell
@@ -52,13 +53,7 @@ def _(results):
     )
     ax.set_ylabel("Count")
     ax.set_title("Distribution of FizzBuzz outputs over the selected range")
-    fig
-    return
-
-
-@app.cell
-def _():
-    return
+    return fig
 
 
 if __name__ == "__main__":
