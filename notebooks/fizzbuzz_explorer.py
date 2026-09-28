@@ -22,7 +22,7 @@ def _():
     outputs. This notebook consumes the published fizzbuzz_kata
     package — it does not reimplement the function.
     """)
-    #return
+    # return
 
 
 @app.cell
@@ -37,7 +37,7 @@ def _():
 def _(end, start):
     lo, hi = sorted((start.value, end.value))
     results = [fizzbuzz(n) for n in range(lo, hi + 1)]
-    
+
     return results
 
 

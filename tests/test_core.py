@@ -19,7 +19,8 @@ from fizzbuzz_kata.core import fizzbuzz
 )
 def test_cases(n, expected):
     assert fizzbuzz(n) == expected
-    
+
+
 def test_fizzbuzz_rejects_non_positive_numbers():
     with pytest.raises(ValueError):
         fizzbuzz(0)
